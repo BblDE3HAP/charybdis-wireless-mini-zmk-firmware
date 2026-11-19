@@ -244,7 +244,7 @@ jobs:
         # charybdis_dongle is the central in dongle mode.
         # Peripherals (left_bt, left_dongle, right_dongle) don't need it.
         if [[ "$TARGET" == "charybdis_right_bt" || "$TARGET" == "charybdis_dongle" ]]; then
-          SNIPPET_OPTION="-DSNIPPET=studio-rpc-usb-uart"
+          SNIPPET_OPTION='-DSNIPPET=studio-rpc-usb-uart;zmk-usb-logging'
         else
           SNIPPET_OPTION=""
         fi
